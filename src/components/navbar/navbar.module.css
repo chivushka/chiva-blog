@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.logo{
+    flex: 1;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    flex: 1;
+}

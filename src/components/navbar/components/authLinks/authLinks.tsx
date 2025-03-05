@@ -3,7 +3,20 @@ import styles from "./authLinks.module.css";
 import Link from "next/link";
 
 const AuthLinks = (): React.ReactNode => {
-  return <div>AuthLinks</div>;
+  //temporary
+  const status = "noauth";
+  return (
+    <>
+      {status === "noauth" ? (
+        <Link href="/login">Login</Link>
+      ) : (
+        <>
+          <Link href="/write">Write</Link>{" "}
+          <span className={styles.link}>Logout</span>
+        </>
+      )}
+    </>
+  );
 };
 
 export default AuthLinks;
